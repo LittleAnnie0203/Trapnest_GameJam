@@ -37,6 +37,6 @@ public class MenuController : MonoBehaviour
 
     public void IniciarJuego()
     {
-        SceneManager.LoadScene("Juego");
+        SceneManager.LoadScene("terreno");
     }
 }
