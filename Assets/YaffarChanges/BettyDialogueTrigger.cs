@@ -15,8 +15,8 @@ public class BettyDialogueTrigger : MonoBehaviour
 
     void Update()
     {
-        // Solo permitir hablar si ya habló con Jamel
-        if (missionManager.currentState == MissionManager.MissionState.TalkedToJamel)
+        // Solo permitir hablar si ya habló con Laura
+        if (missionManager.currentState == MissionManager.MissionState.TalkedToLaura)
         {
             dialogueScript.enabled = true;
         }
@@ -26,7 +26,7 @@ public class BettyDialogueTrigger : MonoBehaviour
         }
 
         // Si el diálogo terminó, completar la misión
-        if (!dialogueScript.isActiveAndEnabled && missionManager.currentState == MissionManager.MissionState.TalkedToJamel)
+        if (!dialogueScript.isActiveAndEnabled && missionManager.currentState == MissionManager.MissionState.TalkedToLaura)
         {
             missionManager.TalkedToBetty();
         }

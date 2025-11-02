@@ -27,7 +27,7 @@ public class LauraDialogueTrigger : MonoBehaviour
         // Si el diálogo terminó, pasar al siguiente estado
         if (!dialogueScript.isActiveAndEnabled && missionManager.currentState == MissionManager.MissionState.FoundBracelet)
         {
-            missionManager.TalkedToJamel();
+            missionManager.TalkedToLaura();
         }
     }
 }
