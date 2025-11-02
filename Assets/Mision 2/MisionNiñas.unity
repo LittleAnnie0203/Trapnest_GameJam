@@ -1883,15 +1883,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 79b920937dd68e5479a5dde3a99adbe3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 165.5919
+      value: 199.70555
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79b920937dd68e5479a5dde3a99adbe3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 165.5919
+      value: 199.70555
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79b920937dd68e5479a5dde3a99adbe3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 165.5919
+      value: 199.70555
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79b920937dd68e5479a5dde3a99adbe3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2090,6 +2090,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7787888e326a8984880f9f21a6d1388f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gravity: 0
+  _fallVelocity: 0
 --- !u!143 &1775463490
 CharacterController:
   m_ObjectHideFlags: 0

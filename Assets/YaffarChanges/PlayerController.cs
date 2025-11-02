@@ -9,12 +9,16 @@ public class PlayerControll : MonoBehaviour
     private Vector3 _moveAxis;
     private Vector3 _camForward, _camRight, _moveDir;
     private Camera _camera;
+
+    [SerializeField] private float _gravity;
+    [SerializeField] private float _fallVelocity;
     // Start is called before the first frame update
     void Start()
     {
         _player = GetComponent<CharacterController>();
         _moveSpeed = 20f;
         _camera = Camera.main;
+        _gravity = 60f;
     }
 
     // Update is called once per frame
@@ -31,9 +35,10 @@ public class PlayerControll : MonoBehaviour
         }
 
         cameraDirection();
-        _moveDir = _moveAxis.z * _camForward + _moveAxis.x * _camRight;
+        _moveDir = _moveAxis.x * _camRight + _moveAxis.z * _camForward;
         transform.LookAt(transform.position + _moveDir);
-        _player.Move(_moveAxis * Time.deltaTime);
+        setGravity();
+        _player.Move(_moveDir * Time.deltaTime);
     }
     private void cameraDirection()
     {
@@ -41,7 +46,22 @@ public class PlayerControll : MonoBehaviour
         _camRight = _camera.transform.right.normalized;
         _camForward.y = 0;
         _camRight.y = 0;
-        
-        
+
+
+    }
+    
+    private void setGravity()
+    {
+        if (_player.isGrounded)
+        {
+            _fallVelocity = -_gravity * Time.deltaTime;
+        }
+        else
+        {
+            _fallVelocity -= _gravity * Time.deltaTime;
+            //Vector3 fallVector = new Vector3(0, _fallVelocity, 0);
+            //_player.Move(fallVector * Time.deltaTime);
+        }
+        _moveDir.y = _fallVelocity;
     }
 }
