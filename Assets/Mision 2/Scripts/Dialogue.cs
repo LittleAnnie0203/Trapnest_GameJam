@@ -4,9 +4,11 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
+    [SerializeField] private MissionManager missionManager;
+    [SerializeField] private string npcName;
     private bool didDialogueStart = false;
-private int lineIndex = 0;
-[SerializeField] private GameObject dialogueMark;
+    private int lineIndex = 0;
+    //[SerializeField] private GameObject dialogueMark;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
@@ -58,8 +60,15 @@ private int lineIndex = 0;
         {
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
-            dialogueMark.SetActive(true);
+            //dialogueMark.SetActive(true);
             Time.timeScale = 1f;
+            if (missionManager != null)
+    {
+            if (npcName == "Laura")
+            missionManager.TalkedToLaura(); 
+            else if (npcName == "Betty")
+            missionManager.TalkedToBetty();
+    }
         }
     }
 

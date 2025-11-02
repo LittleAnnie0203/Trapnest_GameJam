@@ -8,7 +8,7 @@ public class MissionManager : MonoBehaviour
     {
         NotStarted,
         FoundBracelet,
-        TalkedToJamel,
+        TalkedToLaura,
         TalkedToBetty,
         Completed
     }
@@ -20,25 +20,25 @@ public class MissionManager : MonoBehaviour
         if (currentState == MissionState.NotStarted)
         {
             currentState = MissionState.FoundBracelet;
-            Debug.Log("Has encontrado la manilla. Habla con Jamel.");
+            Debug.Log("Has encontrado la manilla. Habla con Laura.");
         }
     }
 
-    public void TalkedToJamel()
+    public void TalkedToLaura()
     {
         if (currentState == MissionState.FoundBracelet)
         {
-            currentState = MissionState.TalkedToJamel;
+            currentState = MissionState.TalkedToLaura;
             Debug.Log("Ahora ve a hablar con Betty.");
         }
     }
 
     public void TalkedToBetty()
     {
-        if (currentState == MissionState.TalkedToJamel)
+        if (currentState == MissionState.TalkedToLaura)
         {
             currentState = MissionState.Completed;
-            Debug.Log("Misión completada: Jamel y Betty se reconciliaron.");
+            Debug.Log("Misión completada: Laura y Betty se reconciliaron.");
         }
     }
 }
