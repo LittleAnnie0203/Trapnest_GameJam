@@ -12,10 +12,13 @@ public class PlayerControll : MonoBehaviour
 
     [SerializeField] private float _gravity;
     [SerializeField] private float _fallVelocity;
+
+    private Animator _animator;
     // Start is called before the first frame update
     void Start()
     {
         _player = GetComponent<CharacterController>();
+        _animator = GetComponent<Animator>();
         _moveSpeed = 20f;
         _camera = Camera.main;
         _gravity = 60f;
@@ -25,6 +28,9 @@ public class PlayerControll : MonoBehaviour
     void Update()
     {
         _moveAxis = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        _animator.SetFloat("PosX", _moveAxis.x);
+        _animator.SetFloat("PosZ", _moveAxis.z);
+
         if (_moveAxis.magnitude > 1)
         {
             _moveAxis = _moveAxis.normalized * _moveSpeed;
