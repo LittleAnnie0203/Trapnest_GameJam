@@ -4,23 +4,21 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
-    [SerializeField] private MissionManager missionManager;
+    [Header("Manejadores de misión (elige cuál usar)")]
+    [SerializeField] private MissionManager missionManager;      // Misión de las niñas
+    [SerializeField] private MissionManagerM3 missionManagerM3;  // Misión de la pareja
+
+    [Header("Configuración del diálogo")]
     [SerializeField] private string npcName;
-    private bool didDialogueStart = false;
-    private int lineIndex = 0;
-    //[SerializeField] private GameObject dialogueMark;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
+
+    private bool didDialogueStart = false;
+    private int lineIndex = 0;
     private float typingTime = 0.05f;
     private bool isPlayerInRange;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
@@ -39,8 +37,8 @@ public class Dialogue : MonoBehaviour
                 dialogueText.text = dialogueLines[lineIndex];
             }
         }
-            
     }
+
     private void StartDialogue()
     {
         didDialogueStart = true;
@@ -49,6 +47,7 @@ public class Dialogue : MonoBehaviour
         Time.timeScale = 0f;
         StartCoroutine(ShowLine());
     }
+
     private void NextDialogueLine()
     {
         lineIndex++;
@@ -58,17 +57,13 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+            // Cierra el diálogo
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
-            //dialogueMark.SetActive(true);
             Time.timeScale = 1f;
-            if (missionManager != null)
-    {
-            if (npcName == "Laura")
-            missionManager.TalkedToLaura(); 
-            else if (npcName == "Betty")
-            missionManager.TalkedToBetty();
-    }
+
+            // ✅ Determina a qué misión pertenece este NPC
+            HandleMissionProgress();
         }
     }
 
@@ -81,20 +76,42 @@ public class Dialogue : MonoBehaviour
             yield return new WaitForSecondsRealtime(typingTime);
         }
     }
-    private void OnTriggerEnter(Collider collision) 
+
+    private void OnTriggerEnter(Collider collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
-        {
+        if (collision.gameObject.CompareTag("Player"))
             isPlayerInRange = true;
-            
-        }
     }
-    private void OnTriggerExit(Collider collision) 
+
+    private void OnTriggerExit(Collider collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
-        {
+        if (collision.gameObject.CompareTag("Player"))
             isPlayerInRange = false;
-            
+    }
+
+    // 👇 Esta parte unifica el progreso de misiones
+    private void HandleMissionProgress()
+    {
+        // -----------------------
+        // Misión 1: Las niñas
+        // -----------------------
+        if (missionManager != null)
+        {
+            if (npcName == "Laura")
+                missionManager.TalkedToLaura();
+            else if (npcName == "Betty")
+                missionManager.TalkedToBetty();
+        }
+
+        // -----------------------
+        // Misión 3: La pareja
+        // -----------------------
+        if (missionManagerM3 != null)
+        {
+            if (npcName == "Claudia")
+                missionManagerM3.TalkedToClaudia();
+            else if (npcName == "Javier")
+                missionManagerM3.TalkedToJavier();
         }
     }
 }

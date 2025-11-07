@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class MissionManagerM3 : MonoBehaviour
 {
-    public enum MissionState
+     public enum MissionState
     {
-        NotStarted,
+        None,
         FoundLetter,
         TalkedToClaudia,
         TalkedToJavier,
         Completed
     }
 
-    public MissionState currentState = MissionState.NotStarted;
+    public MissionState currentState = MissionState.None;
 
     public void FoundLetter()
     {
-        if (currentState == MissionState.NotStarted)
+        if (currentState == MissionState.None)
         {
             currentState = MissionState.FoundLetter;
-            Debug.Log("Carta encontrada. Lleva la carta a Claudia.");
+            Debug.Log("[M3] Carta encontrada. Lleva la carta a Claudia.");
         }
     }
 
@@ -29,7 +29,7 @@ public class MissionManagerM3 : MonoBehaviour
         if (currentState == MissionState.FoundLetter)
         {
             currentState = MissionState.TalkedToClaudia;
-            Debug.Log("Has hablado con Claudia. Ahora ve con Javier.");
+            Debug.Log("[M3] Hablaste con Claudia. Ve a hablar con Javier.");
         }
     }
 
@@ -37,8 +37,18 @@ public class MissionManagerM3 : MonoBehaviour
     {
         if (currentState == MissionState.TalkedToClaudia)
         {
-            currentState = MissionState.Completed;
-            Debug.Log("Misión completada: Javier y Claudia se han reconciliado.");
+            currentState = MissionState.TalkedToJavier;
+            Debug.Log("[M3] Hablaste con Javier. Misión completada.");
+            CompleteMission();
         }
+    }
+
+    private void CompleteMission()
+    {
+        currentState = MissionState.Completed;
+        // Aquí puedes disparar recompensas, eventos de UI, animaciones, etc.
+        Debug.Log("[M3] Misión 3: Javier y Claudia se han reconciliado.");
+
+        
     }
 }
