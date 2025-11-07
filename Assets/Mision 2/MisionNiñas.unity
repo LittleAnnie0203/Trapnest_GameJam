@@ -544,6 +544,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8515439687593655606, guid: 0847e19d54eaadd478f946f5472324c9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 213445145}
+    - targetCorrespondingSourceObject: {fileID: -8515439687593655606, guid: 0847e19d54eaadd478f946f5472324c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 213445149}
+    - targetCorrespondingSourceObject: {fileID: -8515439687593655606, guid: 0847e19d54eaadd478f946f5472324c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 213445148}
   m_SourcePrefab: {fileID: 100100000, guid: 0847e19d54eaadd478f946f5472324c9, type: 3}
 --- !u!1 &213445144 stripped
 GameObject:
@@ -563,10 +569,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missionManager: {fileID: 0}
-  npcName: 
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialogueLines: []
+  missionManagerM3: {fileID: 706557272}
+  npcName: Claudia
+  dialoguePanel: {fileID: 814444734}
+  dialogueText: {fileID: 1538231296}
+  dialogueLines:
+  - "\xBFQu\xE9 traes, Moshi?... \xBFuna... carta?"
+  - "Lee en voz baja: 'Claudia, siento no haberte dicho antes lo que siento... \u2014
+    Javier'."
+  - "No sab\xEDa que Javier pensaba esto... Tal vez debimos hablar antes."
+  - "Gracias, Moshi. Necesito verlo. Quiz\xE1s todo pueda arreglarse."
+--- !u!65 &213445148
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213445144}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.546515, y: 1.1489252, z: 1.1377041}
+  m_Center: {x: 0.013168721, y: -0.3093227, z: 0.46106097}
+--- !u!65 &213445149
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213445144}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.546515, y: 0.6223064, z: 1.1377041}
+  m_Center: {x: 0.013168732, y: -0.04601341, z: 0.461061}
 --- !u!1001 &217986803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1619,6 +1673,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -4161369568681901532, guid: a1bc7a2fa36898743acac1164f5dbdd8, type: 3}
+--- !u!1 &706557271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 706557273}
+  - component: {fileID: 706557272}
+  m_Layer: 0
+  m_Name: MissionManagerM3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &706557272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706557271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d13e36b578fb74d9ebb065959439cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+--- !u!4 &706557273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706557271}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.298409, y: 2.8061533, z: 2.9356947}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &722096807
 GameObject:
   m_ObjectHideFlags: 3
@@ -2149,6 +2248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missionManager: {fileID: 362411370}
+  missionManagerM3: {fileID: 0}
   npcName: Betty
   dialoguePanel: {fileID: 814444734}
   dialogueText: {fileID: 1538231296}
@@ -2559,6 +2659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missionManager: {fileID: 362411370}
+  missionManagerM3: {fileID: 0}
   npcName: Laura
   dialoguePanel: {fileID: 814444734}
   dialogueText: {fileID: 1538231296}
@@ -2729,7 +2830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3046a128cef926945bb86a893b89eab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missionManagerM3: {fileID: 0}
+  missionManagerM3: {fileID: 706557272}
   interactionPrompt: {fileID: 0}
   pickupDialogue: []
   visualRoot: {fileID: 0}
@@ -3463,6 +3564,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4202741418173135126, guid: bababd1310f4dc04db454a45276ffcb9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1356303177}
+    - targetCorrespondingSourceObject: {fileID: 4202741418173135126, guid: bababd1310f4dc04db454a45276ffcb9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1356303181}
+    - targetCorrespondingSourceObject: {fileID: 4202741418173135126, guid: bababd1310f4dc04db454a45276ffcb9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1356303180}
   m_SourcePrefab: {fileID: 100100000, guid: bababd1310f4dc04db454a45276ffcb9, type: 3}
 --- !u!1 &1356303176 stripped
 GameObject:
@@ -3482,10 +3589,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missionManager: {fileID: 0}
-  npcName: 
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialogueLines: []
+  missionManagerM3: {fileID: 706557272}
+  npcName: Javier
+  dialoguePanel: {fileID: 814444734}
+  dialogueText: {fileID: 1538231296}
+  dialogueLines:
+  - "Moshi... \xBFhas visto a Claudia?"
+  - "Claudia me mostr\xF3 la carta. No supe c\xF3mo decirlo antes, ten\xEDa miedo."
+  - "Si te hice da\xF1o, lo siento... \xBFPodemos intentarlo de nuevo?"
+  - Gracias, Moshi. Has hecho lo correcto
+--- !u!65 &1356303180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356303176}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.62396526, y: 0.9723261, z: 1.1147476}
+  m_Center: {x: -0.008973868, y: -0.2843008, z: 0.46574688}
+--- !u!65 &1356303181
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356303176}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.62396526, y: 0.40997523, z: 1.1147475}
+  m_Center: {x: -0.008973893, y: -0.0031247046, z: 0.4657469}
 --- !u!1001 &1441074971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3990,6 +4144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missionManager: {fileID: 0}
+  missionManagerM3: {fileID: 0}
   npcName: 
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
@@ -4717,3 +4872,4 @@ SceneRoots:
   - {fileID: 213445143}
   - {fileID: 1356303175}
   - {fileID: 1120591805}
+  - {fileID: 706557273}
