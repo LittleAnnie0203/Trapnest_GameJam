@@ -4,51 +4,50 @@ using UnityEngine;
 
 public class MissionManagerM4 : MonoBehaviour
 {
-    public enum MissionState
-    {
-        None,
-        FoundChild,
-        FoundTeddy,
-        ReturnedTeddy,
-        Completed
-    }
+    public enum MissionState { NotStarted, SearchChild, FoundChild, FoundBear, Completed }
+    public MissionState currentState = MissionState.NotStarted;
 
-    public MissionState currentState = MissionState.None;
-
-    public void FoundChild()
+    // Llamado cuando el jugador habla con la madre
+    public void TalkedToMother()
     {
-        if (currentState == MissionState.None)
+        if (currentState == MissionState.NotStarted)
         {
-            currentState = MissionState.FoundChild;
-            Debug.Log("[M4] Has encontrado al niño. Necesita su osito.");
+            currentState = MissionState.SearchChild;
+            Debug.Log("Misión iniciada: busca al niño.");
         }
     }
 
+    // Llamado cuando el jugador encuentra al niño
+    public void TalkedToChild()
+    {
+        if (currentState == MissionState.SearchChild)
+        {
+            currentState = MissionState.FoundChild;
+            Debug.Log("Has encontrado al niño. Encuentra su osito.");
+        }
+        else if (currentState == MissionState.FoundBear)
+        {
+            currentState = MissionState.Completed;
+            Debug.Log("El niño tiene su osito. Regresa con la madre.");
+        }
+    }
+
+    // Llamado cuando el jugador recoge el osito
     public void FoundTeddy()
     {
         if (currentState == MissionState.FoundChild)
         {
-            currentState = MissionState.FoundTeddy;
-            Debug.Log("[M4] Recogiste el osito. Llévaselo al niño.");
+            currentState = MissionState.FoundBear;
+            Debug.Log("Has encontrado el osito. Llévaselo al niño.");
         }
     }
 
-    public void ReturnedTeddy()
+    // Llamado al final de la misión
+    public void TalkedToMotherAgain()
     {
-        if (currentState == MissionState.FoundTeddy)
+        if (currentState == MissionState.Completed)
         {
-            currentState = MissionState.ReturnedTeddy;
-            Debug.Log("[M4] Le devolviste el osito al niño. Informa a la madre.");
-        }
-    }
-
-    public void CompleteMission()
-    {
-        if (currentState == MissionState.ReturnedTeddy || currentState == MissionState.FoundTeddy)
-        {
-            currentState = MissionState.Completed;
-            Debug.Log("[M4] Misión 4 completada: Madre y niño reunidos.");
-            // Aquí dispara recompensas, UI, sonidos, etc.
+            Debug.Log("La misión de la madre y el hijo ha terminado.");
         }
     }
 }

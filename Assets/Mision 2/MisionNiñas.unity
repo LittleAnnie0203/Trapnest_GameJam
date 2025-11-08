@@ -622,6 +622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missionManager: {fileID: 0}
   missionManagerM3: {fileID: 706557272}
+  missionManagerM4: {fileID: 0}
   npcName: Claudia
   dialoguePanel: {fileID: 814444734}
   dialogueText: {fileID: 1538231296}
@@ -631,6 +632,7 @@ MonoBehaviour:
     Javier'."
   - "No sab\xEDa que Javier pensaba esto... Tal vez debimos hablar antes."
   - "Gracias, Moshi. Necesito verlo. Quiz\xE1s todo pueda arreglarse."
+  secondaryDialogueLines: []
 --- !u!65 &213445148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1502,6 +1504,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 66700f8642e1d8d4a8fe28396c96a455, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1449422936}
+    - targetCorrespondingSourceObject: {fileID: 5194416488591530661, guid: 66700f8642e1d8d4a8fe28396c96a455, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1872929961}
+    - targetCorrespondingSourceObject: {fileID: 5194416488591530661, guid: 66700f8642e1d8d4a8fe28396c96a455, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1872929960}
+    - targetCorrespondingSourceObject: {fileID: 5194416488591530661, guid: 66700f8642e1d8d4a8fe28396c96a455, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1872929959}
   m_SourcePrefab: {fileID: 100100000, guid: 66700f8642e1d8d4a8fe28396c96a455, type: 3}
 --- !u!1 &464457375
 GameObject:
@@ -2325,6 +2336,27 @@ MonoBehaviour:
   missionManagerM4: {fileID: 664644223}
   interactionPrompt: {fileID: 0}
   visualRoot: {fileID: 0}
+--- !u!135 &830742130
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830742125}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.6956632
+  m_Center: {x: -0.20008779, y: -0.0005494952, z: 0.010253966}
 --- !u!1 &890183828
 GameObject:
   m_ObjectHideFlags: 3
@@ -2584,6 +2616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missionManager: {fileID: 362411370}
   missionManagerM3: {fileID: 0}
+  missionManagerM4: {fileID: 0}
   npcName: Betty
   dialoguePanel: {fileID: 814444734}
   dialogueText: {fileID: 1538231296}
@@ -2593,6 +2626,7 @@ MonoBehaviour:
   - "No sab\xEDa que todav\xEDa la guardaba..."
   - "Quiz\xE1s ambas fuimos demasiado orgullosas."
   - Gracias por traerla, Moshi. Quiero hablar con ella.
+  secondaryDialogueLines: []
 --- !u!65 &908074853
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3272,6 +3306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missionManager: {fileID: 362411370}
   missionManagerM3: {fileID: 0}
+  missionManagerM4: {fileID: 0}
   npcName: Laura
   dialoguePanel: {fileID: 814444734}
   dialogueText: {fileID: 1538231296}
@@ -3280,6 +3315,7 @@ MonoBehaviour:
   - "No pens\xE9 volver a verla. Betty y yo la hicimos juntas..."
   - "Pero desde aquella discusi\xF3n, no hemos vuelto a hablar"
   - "Tal vez... fue mi culpa tambi\xE9n. Dile a Betty que lo siento, \xBFs\xED?"
+  secondaryDialogueLines: []
 --- !u!114 &1066322086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4342,6 +4378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missionManager: {fileID: 0}
   missionManagerM3: {fileID: 706557272}
+  missionManagerM4: {fileID: 0}
   npcName: Javier
   dialoguePanel: {fileID: 814444734}
   dialogueText: {fileID: 1538231296}
@@ -4350,6 +4387,7 @@ MonoBehaviour:
   - "Claudia me mostr\xF3 la carta. No supe c\xF3mo decirlo antes, ten\xEDa miedo."
   - "Si te hice da\xF1o, lo siento... \xBFPodemos intentarlo de nuevo?"
   - Gracias, Moshi. Has hecho lo correcto
+  secondaryDialogueLines: []
 --- !u!65 &1356303180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5924,10 +5962,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missionManager: {fileID: 0}
   missionManagerM3: {fileID: 0}
-  npcName: 
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialogueLines: []
+  missionManagerM4: {fileID: 664644223}
+  npcName: Madre
+  dialoguePanel: {fileID: 814444734}
+  dialogueText: {fileID: 1538231296}
+  dialogueLines:
+  - "\xBFHas visto a mi hijo? Tiene 6 a\xF1os y se llama Tom\xE1s."
+  - "Por favor, \xBFpuedes ayudarme a encontrarlo? Estoy muy preocupada."
+  secondaryDialogueLines:
+  - "\xA1Tom\xE1s! Gracias por traerlo de vuelta."
+  - "No s\xE9 c\xF3mo agradecerte, Moshi."
+  - "Finalmente est\xE1 a salvo y tiene su osito. Gracias."
 --- !u!65 &1838402074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5970,6 +6015,78 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.005205823, y: 0.011048388, z: 0.0040857308}
   m_Center: {x: 0.00018864416, y: 0.004641157, z: 0.0021783782}
+--- !u!1 &1872929956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5194416488591530661, guid: 66700f8642e1d8d4a8fe28396c96a455, type: 3}
+  m_PrefabInstance: {fileID: 442446614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1872929959
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872929956}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0046168286, y: 0.011091718, z: 0.01018439}
+  m_Center: {x: -0.000061222, y: 0.004510193, z: 0.0033600582}
+--- !u!65 &1872929960
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872929956}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.00461683, y: 0.011091718, z: 0.0039432077}
+  m_Center: {x: -0.00006122203, y: 0.0045101936, z: 0.00023945466}
+--- !u!114 &1872929961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872929956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f8a78497d6412e42ad6eec3176a4620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missionManager: {fileID: 0}
+  missionManagerM3: {fileID: 0}
+  missionManagerM4: {fileID: 664644223}
+  npcName: Nino
+  dialoguePanel: {fileID: 814444734}
+  dialogueText: {fileID: 1538231296}
+  dialogueLines:
+  - "Me llamo Tom\xE1s.\""
+  - "Mi mam\xE1 no me encuentra... quiero quedarme un rato m\xE1s."
+  - "No volver\xE9 sin mi osito, se llama 'Chispa'."
+  secondaryDialogueLines:
+  - "\xA1Ese es mi Chispa! Gracias, Moshi"
+  - "Ahora s\xED puedo volver con mi mam\xE1"
 --- !u!1001 &1887838868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6201,6 +6318,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 4080060300676f34fbe1fbca6524afcf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 830742127}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 4080060300676f34fbe1fbca6524afcf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 830742130}
   m_SourcePrefab: {fileID: 100100000, guid: 4080060300676f34fbe1fbca6524afcf, type: 3}
 --- !u!1 &2054112713
 GameObject:
