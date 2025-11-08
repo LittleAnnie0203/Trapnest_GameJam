@@ -52,6 +52,11 @@ public class Dialogue : MonoBehaviour
             if (missionManagerM4.currentState == MissionManagerM4.MissionState.FoundBear)
             dialogueLines = secondaryDialogueLines; // usa el segundo diálogo (tras encontrar el osito)
         }
+        if (npcName == "Madre" && missionManagerM4 != null)
+        {
+            if (missionManagerM4.currentState == MissionManagerM4.MissionState.Completed)
+            dialogueLines = secondaryDialogueLines; // usa el segundo diálogo (tras encontrar el osito)
+        }
         StartCoroutine(ShowLine());
     }
 
