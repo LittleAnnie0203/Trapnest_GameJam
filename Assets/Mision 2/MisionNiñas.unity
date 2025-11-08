@@ -6077,7 +6077,7 @@ MonoBehaviour:
   missionManager: {fileID: 0}
   missionManagerM3: {fileID: 0}
   missionManagerM4: {fileID: 664644223}
-  npcName: Nino
+  npcName: "Ni\xF1o"
   dialoguePanel: {fileID: 814444734}
   dialogueText: {fileID: 1538231296}
   dialogueLines:
