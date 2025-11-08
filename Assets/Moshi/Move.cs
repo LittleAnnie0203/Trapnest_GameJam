@@ -6,28 +6,48 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     [Header("Movimiento")]
+    public float walkSpeed = 4f;
     public float runSpeed = 7f;
     public float gravity = 20f;
     public float jumpForce = 8f;
 
+    private float currentSpeed;
     private float yVelocity;
     private CharacterController controller;
     private Camera mainCamera;
-
     public Animator animator;
+
+    private bool isDancing = false;
+    private bool canInteract = false; // se activa en el trigger
+    private bool isJumping = false;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
         mainCamera = Camera.main;
+        currentSpeed = walkSpeed;
     }
 
     void Update()
     {
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
+        bool isMoving = (x != 0 || y != 0);
 
-        // Dirección de cámara
+        // 🔹 Cancelar animaciones especiales al moverse
+        if (isDancing && isMoving)
+        {
+            animator.SetBool("Dance", false);
+            isDancing = false;
+        }
+
+        // 🔹 Correr con Shift
+        if (Input.GetKey(KeyCode.LeftShift))
+            currentSpeed = runSpeed;
+        else
+            currentSpeed = walkSpeed;
+
+        // 🔹 Dirección de cámara
         Vector3 camForward = mainCamera.transform.forward;
         Vector3 camRight = mainCamera.transform.right;
         camForward.y = 0;
@@ -35,18 +55,25 @@ public class Move : MonoBehaviour
         camForward.Normalize();
         camRight.Normalize();
 
-        // Movimiento relativo a la cámara
+        // 🔹 Movimiento relativo a cámara
         Vector3 move = (camForward * y + camRight * x);
-        Vector3 moveDir = move.normalized * runSpeed;
+        Vector3 moveDir = move.normalized * currentSpeed;
 
-        // Aplicar gravedad
+        // 🔹 Saltar
         if (controller.isGrounded)
         {
-            yVelocity = -1f; // Mantiene al jugador en el suelo
+            yVelocity = -1f;
 
-            // (Salto lo añadiremos más adelante)
-            // if (Input.GetButtonDown("Jump"))
-            //     yVelocity = jumpForce;
+            if (Input.GetButtonDown("Jump") && !isJumping)
+            {
+                yVelocity = jumpForce;
+                isJumping = true;
+                animator.SetTrigger("Jump");
+            }
+            else if (!Input.GetButton("Jump"))
+            {
+                isJumping = false;
+            }
         }
         else
         {
@@ -55,22 +82,45 @@ public class Move : MonoBehaviour
 
         moveDir.y = yVelocity;
 
-        // Orientar al personaje
+        // 🔹 Orientar al personaje
         if (move.magnitude > 0)
             transform.forward = new Vector3(move.x, 0, move.z);
 
-        // Mover al jugador
+        // 🔹 Mover
         controller.Move(moveDir * Time.deltaTime);
 
-        // 🔹 Animaciones
+        // 🔹 Animaciones base (caminar/correr)
         if (animator != null)
         {
-            // Para control con blend tree 2D
             animator.SetFloat("VelX", x);
             animator.SetFloat("VelY", y);
-
-            // Si además usás un parámetro de velocidad total (opcional)
-            animator.SetFloat("Speed", new Vector2(x, y).magnitude);
+            animator.SetBool("Run", Input.GetKey(KeyCode.LeftShift));
         }
+
+        // 🔹 Interacción con E (solo si hay trigger)
+        if (Input.GetKeyDown(KeyCode.E) && canInteract)
+        {
+            animator.SetTrigger("Pickup");
+        }
+
+        // 🔹 Baile con R (toggle)
+        if (Input.GetKeyDown(KeyCode.R) && !isDancing)
+        {
+            animator.SetBool("Dance", true);
+            isDancing = true;
+        }
+    }
+
+    // Detectar triggers de interacción
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Interact"))
+            canInteract = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Interact"))
+            canInteract = false;
     }
 }
