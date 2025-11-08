@@ -254,10 +254,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CinnaHouse\r\n\n\nExplora tu propia casita interactiva y divi\xE9rtete
-    tocando objetos que se iluminan, suenan y se mueven.  \r\n\n- Lampara\n- Arcade\n-
-    Cocina\n- Puerta\n- Bateria\n\nUsa el bot\xF3n de men\xFA para regresar al inicio
-    en cualquier momento.  \r\n\nDesarrollado por:\nAna Daniela Churata Silvestre.\r\n"
+  m_text: "MOSHI: RECONECTANDO LAZOS\n\n\nExplora la aldea y recorre todo, para encontrar
+    objetos importantes para los habitantes de la aldea, para asi poder reconectar
+    los lazos\n\n- Caminar\n- Correr\n- Regoger\n- Saltar\n- Interactuar\n\n\nDesarrollado
+    por:\nDexter Raul Chipana Poma\nAna Daniela Churata Silvestre.\nYaffar Hayek
+    Gallardo Balcazar \nValeria Aleli Salgueiro Rodriguez\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1090,7 +1091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272, y: -353}
+  m_AnchoredPosition: {x: -272, y: -271}
   m_SizeDelta: {x: 800, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925231490
@@ -1117,7 +1118,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.8784314, g: 0.13725491, b: 0.64705884, a: 1}
+    m_SelectedColor: {r: 0.48235294, g: 0.26666668, b: 0.105882354, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1640,7 +1641,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272, y: -150}
+  m_AnchoredPosition: {x: -272, y: -92}
   m_SizeDelta: {x: 800, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1654404342
@@ -1667,7 +1668,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.990566, g: 0.98675954, b: 0.9578586, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.8773585, g: 0.13656996, b: 0.64751524, a: 1}
+    m_SelectedColor: {r: 0.48235294, g: 0.26666668, b: 0.105882354, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2135,7 +2136,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272, y: -548}
+  m_AnchoredPosition: {x: -272, y: -445}
   m_SizeDelta: {x: 800, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081826364
@@ -2162,7 +2163,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.8784314, g: 0.13725491, b: 0.64705884, a: 1}
+    m_SelectedColor: {r: 0.4811321, g: 0.2636616, b: 0.102127105, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
