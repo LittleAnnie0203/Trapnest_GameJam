@@ -21,11 +21,19 @@ public class Move : MonoBehaviour
     private bool canInteract = false; // se activa en el trigger
     private bool isJumping = false;
 
+    [Header("Audio del Baile")]
+    public AudioSource audioSource;
+    public AudioClip[] danceSongs; // ← aquí arrastras tus 5 canciones desde el inspector
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
         mainCamera = Camera.main;
         currentSpeed = walkSpeed;
+
+        // Si olvidaste agregar el AudioSource en el inspector, lo busca automáticamente
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -37,15 +45,11 @@ public class Move : MonoBehaviour
         // 🔹 Cancelar animaciones especiales al moverse
         if (isDancing && isMoving)
         {
-            animator.SetBool("Dance", false);
-            isDancing = false;
+            StopDance();
         }
 
         // 🔹 Correr con Shift
-        if (Input.GetKey(KeyCode.LeftShift))
-            currentSpeed = runSpeed;
-        else
-            currentSpeed = walkSpeed;
+        currentSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
 
         // 🔹 Dirección de cámara
         Vector3 camForward = mainCamera.transform.forward;
@@ -104,11 +108,37 @@ public class Move : MonoBehaviour
         }
 
         // 🔹 Baile con R (toggle)
-        if (Input.GetKeyDown(KeyCode.R) && !isDancing)
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            animator.SetBool("Dance", true);
-            isDancing = true;
+            if (!isDancing)
+                StartDance();
+            else
+                StopDance();
         }
+    }
+
+    // 🎶 Iniciar baile + música
+    void StartDance()
+    {
+        isDancing = true;
+        animator.SetBool("Dance", true);
+
+        if (danceSongs.Length > 0 && audioSource != null)
+        {
+            AudioClip clip = danceSongs[Random.Range(0, danceSongs.Length)];
+            audioSource.clip = clip;
+            audioSource.Play();
+        }
+    }
+
+    // ⛔ Detener baile + música
+    void StopDance()
+    {
+        isDancing = false;
+        animator.SetBool("Dance", false);
+
+        if (audioSource != null && audioSource.isPlaying)
+            audioSource.Stop();
     }
 
     // Detectar triggers de interacción
