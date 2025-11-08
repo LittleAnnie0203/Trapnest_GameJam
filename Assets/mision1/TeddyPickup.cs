@@ -8,8 +8,8 @@ public class TeddyPickup : MonoBehaviour
     private bool pickedUp = false;
 
     [SerializeField] private MissionManagerM4 missionManagerM4;
-    [SerializeField] private GameObject interactionPrompt; // "Presiona E para recoger"
-    [SerializeField] private GameObject visualRoot; // el modelo del osito
+    [SerializeField] private GameObject interactionPrompt; // Texto "Presiona E para recoger"
+    [SerializeField] private GameObject visualRoot; // Modelo del osito
 
     void Start()
     {
@@ -28,6 +28,7 @@ public class TeddyPickup : MonoBehaviour
     private void PickUpTeddy()
     {
         pickedUp = true;
+
         if (missionManagerM4 != null)
             missionManagerM4.FoundTeddy();
         else
@@ -36,7 +37,7 @@ public class TeddyPickup : MonoBehaviour
         if (visualRoot != null) visualRoot.SetActive(false);
         if (interactionPrompt != null) interactionPrompt.SetActive(false);
 
-        Debug.Log("Osito recogido.");
+        Debug.Log("Has recogido el osito de felpa 🧸.");
     }
 
     private void OnTriggerEnter(Collider other)

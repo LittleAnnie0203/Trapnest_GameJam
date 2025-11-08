@@ -7,12 +7,14 @@ public class Dialogue : MonoBehaviour
     [Header("Manejadores de misión (elige cuál usar)")]
     [SerializeField] private MissionManager missionManager;      // Misión de las niñas
     [SerializeField] private MissionManagerM3 missionManagerM3;  // Misión de la pareja
+    [SerializeField] private MissionManagerM4 missionManagerM4;  // Misión del osito
 
     [Header("Configuración del diálogo")]
     [SerializeField] private string npcName;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
+    [SerializeField, TextArea(4, 6)] private string[] secondaryDialogueLines;
 
     private bool didDialogueStart = false;
     private int lineIndex = 0;
@@ -45,6 +47,11 @@ public class Dialogue : MonoBehaviour
         dialoguePanel.SetActive(true);
         lineIndex = 0;
         Time.timeScale = 0f;
+        if (npcName == "Niño" && missionManagerM4 != null)
+        {
+            if (missionManagerM4.currentState == MissionManagerM4.MissionState.FoundBear)
+            dialogueLines = secondaryDialogueLines; // usa el segundo diálogo (tras encontrar el osito)
+        }
         StartCoroutine(ShowLine());
     }
 
@@ -93,25 +100,43 @@ public class Dialogue : MonoBehaviour
     private void HandleMissionProgress()
     {
         // -----------------------
-        // Misión 1: Las niñas
-        // -----------------------
-        if (missionManager != null)
-        {
-            if (npcName == "Laura")
-                missionManager.TalkedToLaura();
-            else if (npcName == "Betty")
-                missionManager.TalkedToBetty();
-        }
+    // Misión 1: Las niñas
+    // -----------------------
+    if (missionManager != null)
+    {
+        if (npcName == "Laura")
+            missionManager.TalkedToLaura();
+        else if (npcName == "Betty")
+            missionManager.TalkedToBetty();
+    }
 
-        // -----------------------
-        // Misión 3: La pareja
-        // -----------------------
-        if (missionManagerM3 != null)
+    // -----------------------
+    // Misión 3: La pareja
+    // -----------------------
+    if (missionManagerM3 != null)
+    {
+        if (npcName == "Claudia")
+            missionManagerM3.TalkedToClaudia();
+        else if (npcName == "Javier")
+            missionManagerM3.TalkedToJavier();
+    }
+
+    // -----------------------
+    // Misión 4: Madre e Hijo
+    // -----------------------
+    if (missionManagerM4 != null)
+    {
+        if (npcName == "Madre")
         {
-            if (npcName == "Claudia")
-                missionManagerM3.TalkedToClaudia();
-            else if (npcName == "Javier")
-                missionManagerM3.TalkedToJavier();
+            if (missionManagerM4.currentState == MissionManagerM4.MissionState.NotStarted)
+                missionManagerM4.TalkedToMother();
+            else if (missionManagerM4.currentState == MissionManagerM4.MissionState.Completed)
+                missionManagerM4.TalkedToMotherAgain();
         }
+        else if (npcName == "Niño")
+        {
+            missionManagerM4.TalkedToChild();
+        }
+    }
     }
 }
