@@ -6568,6 +6568,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3476900996081902384, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
+      propertyPath: m_text
+      value: "Regresa con el ni\xF1o"
+      objectReference: {fileID: 0}
     - target: {fileID: 3547594929224697862, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -6749,7 +6753,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1931301472865567616, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
