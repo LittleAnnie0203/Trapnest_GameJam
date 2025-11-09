@@ -8,6 +8,7 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private MissionManager missionManager;      // Misión de las niñas
     [SerializeField] private MissionManagerM3 missionManagerM3;  // Misión de la pareja
     [SerializeField] private MissionManagerM4 missionManagerM4;  // Misión del osito
+    [SerializeField] private MissionManagerFinal missionManagerFinal;
 
     [Header("Configuración del diálogo")]
     [SerializeField] private string npcName;
@@ -15,6 +16,7 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
     [SerializeField, TextArea(4, 6)] private string[] secondaryDialogueLines;
+    
 
     private bool didDialogueStart = false;
     private int lineIndex = 0;
@@ -57,6 +59,18 @@ public class Dialogue : MonoBehaviour
             if (missionManagerM4.currentState == MissionManagerM4.MissionState.Completed)
             dialogueLines = secondaryDialogueLines; // usa el segundo diálogo (tras encontrar el osito)
         }
+        if (missionManagerFinal != null && npcName == "Yaffy")
+        {
+            if (missionManagerFinal.currentState == MissionManagerFinal.MissionState.FoundCollar)
+            {
+                missionManagerFinal.ReturnedCollar();   // collar entregado
+                missionManagerFinal.TalkedToYaffy();    // esto llevará a MissionComplete y ShowEnding()
+            }
+            else if (missionManagerFinal.currentState == MissionManagerFinal.MissionState.Start)
+            {
+                missionManagerFinal.TalkedToYaffy(); // inicia la misión
+            }
+    }
         StartCoroutine(ShowLine());
     }
 
@@ -126,22 +140,34 @@ public class Dialogue : MonoBehaviour
             missionManagerM3.TalkedToJavier();
     }
 
-    // -----------------------
-    // Misión 4: Madre e Hijo
-    // -----------------------
-    if (missionManagerM4 != null)
-    {
-        if (npcName == "Madre")
+        // -----------------------
+        // Misión 4: Madre e Hijo
+        // -----------------------
+        if (missionManagerM4 != null)
         {
-            if (missionManagerM4.currentState == MissionManagerM4.MissionState.NotStarted)
-                missionManagerM4.TalkedToMother();
-            else if (missionManagerM4.currentState == MissionManagerM4.MissionState.Completed)
-                missionManagerM4.TalkedToMotherAgain();
+            if (npcName == "Madre")
+            {
+                if (missionManagerM4.currentState == MissionManagerM4.MissionState.NotStarted)
+                    missionManagerM4.TalkedToMother();
+                else if (missionManagerM4.currentState == MissionManagerM4.MissionState.Completed)
+                    missionManagerM4.TalkedToMotherAgain();
+            }
+            else if (npcName == "Niño")
+            {
+                missionManagerM4.TalkedToChild();
+            }
         }
-        else if (npcName == "Niño")
+       if (missionManagerFinal != null)
+        {   
+        if (npcName == "Yaffy")
         {
-            missionManagerM4.TalkedToChild();
+            // Si aún no empezó, este diálogo inicia la misión
+            if (missionManagerFinal.currentState == MissionManagerFinal.MissionState.Start)
+                missionManagerFinal.TalkedToYaffy();
+            // Si entregaste collar, al dialogar otra vez con Yaffy se completa
+            else if (missionManagerFinal.currentState == MissionManagerFinal.MissionState.ReturnedCollar)
+                missionManagerFinal.TalkedToYaffy(); // method handles Complete
         }
-    }
+        }
     }
 }
