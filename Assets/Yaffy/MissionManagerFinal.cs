@@ -30,17 +30,24 @@ public class MissionManagerFinal : MonoBehaviour
 
     public void TalkedToYaffy()
     {
-        if (currentState == MissionState.Start)
+        switch (currentState)
         {
-            Debug.Log("[Final] Hablaste con Yaffy: misión activada - busca el collar.");
-            SetState(MissionState.TalkedToYaffy);
-        }
-        else if (currentState == MissionState.ReturnedCollar)
-        {
-            // ya devolviste el collar → cerrar (por si el jugador habla otra vez)
-            CompleteMission();
+            case MissionState.Start:
+                Debug.Log("[Final] Hablaste con Yaffy: misión activada - busca el collar.");
+                SetState(MissionState.TalkedToYaffy);
+                break;
+
+            case MissionState.FoundCollar:
+                Debug.Log("[Final] Le diste el collar a Yaffy. Mostrando diálogo de agradecimiento.");
+                ReturnedCollar(); // ✅ ahora sí avanza correctamente
+                break;
+
+            case MissionState.ReturnedCollar:
+                CompleteMission(); // si ya devolviste el collar
+                break;
         }
     }
+
 
     public void FoundCollar()
     {

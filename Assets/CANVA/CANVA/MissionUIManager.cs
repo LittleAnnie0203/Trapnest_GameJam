@@ -1,49 +1,45 @@
-using UnityEngine;
+Ôªøusing UnityEngine;
 using TMPro;
 
 public class MissionUIManager : MonoBehaviour
 {
     [Header("Referencias a los MissionManagers")]
-    public MissionManager mission1;        // objeto que tiene MissionManager
-    public MissionManagerM3 mission3;      // objeto con MissionManagerM3
-    public MissionManagerM4 mission4;      // objeto con MissionManagerM4
+    public MissionManager mission1;
+    public MissionManagerM3 mission3;
+    public MissionManagerM4 mission4;
+    public MissionManagerFinal missionFinal; // ‚Üê tu misi√≥n final de Yaffi
 
-    [Header("TextMeshPro - MisiÛn 1 (Manilla)")]
+    [Header("Contenedores de UI por misi√≥n")]
+    public GameObject panelMission1;
+    public GameObject panelMission3;
+    public GameObject panelMission4;
+    public GameObject panelMissionFinal;
+
+    [Header("Textos de Misi√≥n 1 (Manilla)")]
     public TextMeshProUGUI step1_M1;
     public TextMeshProUGUI step2_M1;
     public TextMeshProUGUI step3_M1;
 
-    [Header("TextMeshPro - MisiÛn 3 (Carta)")]
+    [Header("Textos de Misi√≥n 3 (Carta)")]
     public TextMeshProUGUI step1_M3;
     public TextMeshProUGUI step2_M3;
     public TextMeshProUGUI step3_M3;
 
-    [Header("TextMeshPro - MisiÛn 4 (Madre/niÒo/osito)")]
+    [Header("Textos de Misi√≥n 4 (Madre/ni√±o/osito)")]
     public TextMeshProUGUI step1_M4;
     public TextMeshProUGUI step2_M4;
     public TextMeshProUGUI step3_M4;
     public TextMeshProUGUI step4_M4;
 
-    // Guardamos textos originales para no modificar el texto base permanentemente
-    private string o_step1_M1, o_step2_M1, o_step3_M1;
-    private string o_step1_M3, o_step2_M3, o_step3_M3;
-    private string o_step1_M4, o_step2_M4, o_step3_M4, o_step4_M4;
+    [Header("Textos de Misi√≥n Final (Yaffi)")]
+    public TextMeshProUGUI step1_Final;
+    public TextMeshProUGUI step2_Final;
+    public TextMeshProUGUI step3_Final;
 
-    void Awake()
+    void Start()
     {
-        // Guardar textos originales
-        if (step1_M1 != null) o_step1_M1 = step1_M1.text;
-        if (step2_M1 != null) o_step2_M1 = step2_M1.text;
-        if (step3_M1 != null) o_step3_M1 = step3_M1.text;
-
-        if (step1_M3 != null) o_step1_M3 = step1_M3.text;
-        if (step2_M3 != null) o_step2_M3 = step2_M3.text;
-        if (step3_M3 != null) o_step3_M3 = step3_M3.text;
-
-        if (step1_M4 != null) o_step1_M4 = step1_M4.text;
-        if (step2_M4 != null) o_step2_M4 = step2_M4.text;
-        if (step3_M4 != null) o_step3_M4 = step3_M4.text;
-        if (step4_M4 != null) o_step4_M4 = step4_M4.text;
+        // Solo la primera misi√≥n activa al inicio
+        SetActivePanels(true, false, false, false);
     }
 
     void Update()
@@ -51,21 +47,45 @@ public class MissionUIManager : MonoBehaviour
         UpdateMission1UI();
         UpdateMission3UI();
         UpdateMission4UI();
+        UpdateMissionFinalUI();
+
+        UpdatePanelVisibility();
     }
 
-    // ---------- MisiÛn 1 ----------
+    // =====================================================
+    // CONTROL DE PANELES
+    // =====================================================
+    void UpdatePanelVisibility()
+    {
+        // Mostrar solo la misi√≥n activa (o en progreso)
+        if (mission1 != null && mission1.currentState != MissionManager.MissionState.Completed)
+            SetActivePanels(true, false, false, false);
+        else if (mission3 != null && mission3.currentState != MissionManagerM3.MissionState.Completed)
+            SetActivePanels(false, true, false, false);
+        else if (mission4 != null && mission4.currentState != MissionManagerM4.MissionState.Completed)
+            SetActivePanels(false, false, true, false);
+        else if (missionFinal != null)
+            SetActivePanels(false, false, false, true);
+    }
+
+    void SetActivePanels(bool m1, bool m3, bool m4, bool mF)
+    {
+        if (panelMission1 != null) panelMission1.SetActive(m1);
+        if (panelMission3 != null) panelMission3.SetActive(m3);
+        if (panelMission4 != null) panelMission4.SetActive(m4);
+        if (panelMissionFinal != null) panelMissionFinal.SetActive(mF);
+    }
+
+    // =====================================================
+    // Misi√≥n 1
+    // =====================================================
     void UpdateMission1UI()
     {
         if (mission1 == null) return;
-
-        // Reseteamos antes de aplicar
-        ResetTexts(step1_M1, step2_M1, step3_M1, o_step1_M1, o_step2_M1, o_step3_M1);
+        ResetColors(step1_M1, step2_M1, step3_M1);
 
         switch (mission1.currentState)
         {
-            case MissionManager.MissionState.NotStarted:
-                // nada marcado
-                break;
             case MissionManager.MissionState.FoundBracelet:
                 Mark(step1_M1);
                 Highlight(step2_M1);
@@ -81,17 +101,16 @@ public class MissionUIManager : MonoBehaviour
         }
     }
 
-    // ---------- MisiÛn 3 ----------
+    // =====================================================
+    // Misi√≥n 3
+    // =====================================================
     void UpdateMission3UI()
     {
         if (mission3 == null) return;
-
-        ResetTexts(step1_M3, step2_M3, step3_M3, o_step1_M3, o_step2_M3, o_step3_M3);
+        ResetColors(step1_M3, step2_M3, step3_M3);
 
         switch (mission3.currentState)
         {
-            case MissionManagerM3.MissionState.None:
-                break;
             case MissionManagerM3.MissionState.FoundLetter:
                 Mark(step1_M3);
                 Highlight(step2_M3);
@@ -107,17 +126,16 @@ public class MissionUIManager : MonoBehaviour
         }
     }
 
-    // ---------- MisiÛn 4 ----------
+    // =====================================================
+    // Misi√≥n 4
+    // =====================================================
     void UpdateMission4UI()
     {
         if (mission4 == null) return;
-
-        ResetTexts(step1_M4, step2_M4, step3_M4, step4_M4, o_step1_M4, o_step2_M4, o_step3_M4, o_step4_M4);
+        ResetColors(step1_M4, step2_M4, step3_M4, step4_M4);
 
         switch (mission4.currentState)
         {
-            case MissionManagerM4.MissionState.NotStarted:
-                break;
             case MissionManagerM4.MissionState.SearchChild:
                 Mark(step1_M4);
                 Highlight(step2_M4);
@@ -139,7 +157,38 @@ public class MissionUIManager : MonoBehaviour
         }
     }
 
-    // ---------- Funciones auxiliares ----------
+    // =====================================================
+    // Misi√≥n Final (Yaffi)
+    // =====================================================
+    void UpdateMissionFinalUI()
+    {
+        if (missionFinal == null) return;
+        ResetColors(step1_Final, step2_Final, step3_Final);
+
+        switch (missionFinal.currentState)
+        {
+            case MissionManagerFinal.MissionState.TalkedToYaffy:
+                Highlight(step1_Final);
+                break;
+            case MissionManagerFinal.MissionState.FoundCollar:
+                Mark(step1_Final);
+                Highlight(step2_Final);
+                break;
+            case MissionManagerFinal.MissionState.ReturnedCollar:
+                Mark(step1_Final);
+                Mark(step2_Final);
+                Highlight(step3_Final);
+                break;
+            case MissionManagerFinal.MissionState.MissionComplete:
+                MarkAll(step1_Final, step2_Final, step3_Final);
+                break;
+        }
+
+    }
+
+    // =====================================================
+    // UTILIDADES DE COLOR Y MARCADO
+    // =====================================================
     void Mark(TextMeshProUGUI text)
     {
         if (text == null) return;
@@ -150,31 +199,29 @@ public class MissionUIManager : MonoBehaviour
     void Highlight(TextMeshProUGUI text)
     {
         if (text == null) return;
-        // color amarillo para paso activo
         text.color = Color.cyan;
     }
 
     void MarkAll(params TextMeshProUGUI[] texts)
     {
-        foreach (var t in texts) if (t != null) { t.text = $"<s>{t.text}</s>"; t.color = Color.gray; }
+        foreach (var t in texts)
+        {
+            if (t != null)
+            {
+                t.text = $"<s>{t.text}</s>";
+                t.color = Color.gray;
+            }
+        }
     }
 
-    // Reset que devuelve los textos a los originales (evita m˙ltiples <s> o colores acumulados)
-    void ResetTexts(TextMeshProUGUI t1, TextMeshProUGUI t2, TextMeshProUGUI t3,
-                    string o1, string o2, string o3)
+    void ResetColors(params TextMeshProUGUI[] texts)
     {
-        if (t1 != null) { t1.text = o1; t1.color = Color.yellow; }
-        if (t2 != null) { t2.text = o2; t2.color = Color.yellow; }
-        if (t3 != null) { t3.text = o3; t3.color = Color.yellow; }
-    }
-
-    // Sobrecarga para 4 textos
-    void ResetTexts(TextMeshProUGUI t1, TextMeshProUGUI t2, TextMeshProUGUI t3, TextMeshProUGUI t4,
-                    string o1, string o2, string o3, string o4)
-    {
-        if (t1 != null) { t1.text = o1; t1.color = Color.yellow; }
-        if (t2 != null) { t2.text = o2; t2.color = Color.yellow; }
-        if (t3 != null) { t3.text = o3; t3.color = Color.yellow; }
-        if (t4 != null) { t4.text = o4; t4.color = Color.yellow; }
+        foreach (var t in texts)
+        {
+            if (t != null)
+            {
+                t.color = Color.yellow;
+            }
+        }
     }
 }
