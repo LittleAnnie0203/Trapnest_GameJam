@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tienda+3d+modelo
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: e2b376c33cc8b1640a73fa2ffbda79e3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -258,6 +262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -326,6 +334,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
       propertyPath: m_Name
       value: pino (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -422,6 +434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roca+de+escalada+3d
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: a0c150b47f88e1443bfbe404dc160b13, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -494,6 +510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: modelo+3d+de+casa (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: e72f45cd298ddf94780df2c781da7bf7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -553,6 +573,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -777,6 +801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -885,6 +913,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1109,6 +1141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1324,6 +1360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fuentemoshi
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 3a1be854148ae41489a16adcfb544a33, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1384,6 +1424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1441,6 +1485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1497,6 +1545,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
       propertyPath: m_Name
       value: banco+parque+3d (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1680,6 +1732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1775,6 +1831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: columpio+3d+modelo
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 3e79e4846d2848845ab12fc4e8e66c7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1858,6 +1918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1914,6 +1978,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2122,6 +2190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2145,7 +2217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &373211293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2294,6 +2366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2439,6 +2515,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2932,6 +3012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wooden cabin 3d model (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -8148156210950934553, guid: d48772234183001489a363887ea7335b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -553860988396757955, guid: d48772234183001489a363887ea7335b, type: 3}
       propertyPath: m_LocalScale.x
       value: 6.129382
@@ -3003,6 +3087,10 @@ PrefabInstance:
     - target: {fileID: -8148156210950934553, guid: 744900c37b27b0d44b4ed6de8095e69b, type: 3}
       propertyPath: m_Name
       value: house 3d model (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -8148156210950934553, guid: 744900c37b27b0d44b4ed6de8095e69b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -553860988396757955, guid: 744900c37b27b0d44b4ed6de8095e69b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3116,6 +3204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: banco+parque+3d (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3187,6 +3279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3256,6 +3352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3298,6 +3398,10 @@ PrefabInstance:
     - target: {fileID: -8148156210950934553, guid: 082465fe92fc0b84bae5aba95a94812b, type: 3}
       propertyPath: m_Name
       value: cementerio 3d modelo 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -8148156210950934553, guid: 082465fe92fc0b84bae5aba95a94812b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -553860988396757955, guid: 082465fe92fc0b84bae5aba95a94812b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3381,6 +3485,10 @@ PrefabInstance:
     - target: {fileID: -8148156210950934553, guid: a12f7cd74f361314e939f49274681bfd, type: 3}
       propertyPath: m_Name
       value: parque infantil 3d
+      objectReference: {fileID: 0}
+    - target: {fileID: -8148156210950934553, guid: a12f7cd74f361314e939f49274681bfd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -553860988396757955, guid: a12f7cd74f361314e939f49274681bfd, type: 3}
       propertyPath: m_LocalScale.x
@@ -3505,6 +3613,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 6cdb68b91448de540938e9ab7a2de36b, type: 3}
       propertyPath: m_Name
       value: casita4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 6cdb68b91448de540938e9ab7a2de36b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3674,6 +3786,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: a1bc7a2fa36898743acac1164f5dbdd8, type: 3}
       propertyPath: m_Name
       value: casita5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: a1bc7a2fa36898743acac1164f5dbdd8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3896,6 +4012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tienda+3d+modelo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: e2b376c33cc8b1640a73fa2ffbda79e3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3956,6 +4076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3972,6 +4096,10 @@ PrefabInstance:
     - target: {fileID: -8148156210950934553, guid: 082465fe92fc0b84bae5aba95a94812b, type: 3}
       propertyPath: m_Name
       value: cementerio 3d modelo 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8148156210950934553, guid: 082465fe92fc0b84bae5aba95a94812b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -553860988396757955, guid: 082465fe92fc0b84bae5aba95a94812b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4212,6 +4340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4280,6 +4412,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
       propertyPath: m_Name
       value: pino (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4430,6 +4566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa+del+bosque+3d+model
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: a25bc0f31fc668844a750cb94c752ec0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4486,6 +4626,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4620,6 +4764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4677,6 +4825,10 @@ PrefabInstance:
     - target: {fileID: -8148156210950934553, guid: d48772234183001489a363887ea7335b, type: 3}
       propertyPath: m_Name
       value: wooden cabin 3d model (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -8148156210950934553, guid: d48772234183001489a363887ea7335b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -553860988396757955, guid: d48772234183001489a363887ea7335b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4789,6 +4941,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
       propertyPath: m_Name
       value: banco+parque+3d (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5322,6 +5478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: casita3
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 12d070a7dbcbc6c48a3c1c51a0741408, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5367,6 +5527,10 @@ PrefabInstance:
     - target: {fileID: -8148156210950934553, guid: d48772234183001489a363887ea7335b, type: 3}
       propertyPath: m_Name
       value: wooden cabin 3d model
+      objectReference: {fileID: 0}
+    - target: {fileID: -8148156210950934553, guid: d48772234183001489a363887ea7335b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -553860988396757955, guid: d48772234183001489a363887ea7335b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5480,6 +5644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5522,6 +5690,10 @@ PrefabInstance:
     - target: {fileID: -8148156210950934553, guid: 744900c37b27b0d44b4ed6de8095e69b, type: 3}
       propertyPath: m_Name
       value: house 3d model (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -8148156210950934553, guid: 744900c37b27b0d44b4ed6de8095e69b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -553860988396757955, guid: 744900c37b27b0d44b4ed6de8095e69b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5661,6 +5833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5729,6 +5905,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
       propertyPath: m_Name
       value: pino (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5799,6 +5979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5867,6 +6051,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: b55a0e265f53f7c4e825453f69f56f54, type: 3}
       propertyPath: m_Name
       value: plataforma6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: b55a0e265f53f7c4e825453f69f56f54, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5955,6 +6143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6023,6 +6215,10 @@ PrefabInstance:
     - target: {fileID: 3445542050043496534, guid: 61a4976ff2221b140b78ac2ee2251dc5, type: 3}
       propertyPath: m_Name
       value: casita1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445542050043496534, guid: 61a4976ff2221b140b78ac2ee2251dc5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6096,6 +6292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6168,6 +6368,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 69cd0d53760ab5641adfa4904d896b3e, type: 3}
       propertyPath: m_Name
       value: plataforma2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 69cd0d53760ab5641adfa4904d896b3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6244,6 +6448,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: bc11d2d8886d05e488acf8dc9432c407, type: 3}
       propertyPath: m_Name
       value: plataforma1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: bc11d2d8886d05e488acf8dc9432c407, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6395,6 +6603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "caba\xF1a+de+troncos+3d+modelo"
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: b52948b21a82b45419ed64c6fddc2dca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6466,6 +6678,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
       propertyPath: m_Name
       value: pino (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6625,6 +6841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: casita5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: a1bc7a2fa36898743acac1164f5dbdd8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6633,6 +6853,147 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 909151324}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: a1bc7a2fa36898743acac1164f5dbdd8, type: 3}
+--- !u!1 &1080476056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1080476059}
+  - component: {fileID: 1080476058}
+  - component: {fileID: 1080476057}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1080476057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080476056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d816e7c3471680045b9b4f891f7c6f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &1080476058
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080476056}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3b3a8cf5cf4337b4e8fce8a208cda0d0, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.6
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1080476059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080476056}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 93, y: 3.25, z: -13.47}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1090494475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6684,6 +7045,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6753,6 +7118,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
       propertyPath: m_Name
       value: pino (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7033,6 +7402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: casita3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 12d070a7dbcbc6c48a3c1c51a0741408, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7232,6 +7605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7301,6 +7678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7357,6 +7738,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7427,6 +7812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7442,67 +7831,67 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 320759469239945154, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320759469239945154, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 320759469239945154, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 320759469239945154, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 950629121764172730, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 950629121764172730, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 950629121764172730, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 950629121764172730, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 3187591558062579019, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3187591558062579019, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3187591558062579019, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3187591558062579019, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -125
       objectReference: {fileID: 0}
     - target: {fileID: 3319625193476093016, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3319625193476093016, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3319625193476093016, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3319625193476093016, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -125
       objectReference: {fileID: 0}
     - target: {fileID: 3476900996081902384, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_text
@@ -7510,35 +7899,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3547594929224697862, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3547594929224697862, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3547594929224697862, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3547594929224697862, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 4185548687193872776, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185548687193872776, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185548687193872776, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4185548687193872776, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 6192424229125971448, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_Name
@@ -7546,67 +7935,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7720006807526342445, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7720006807526342445, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7720006807526342445, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7720006807526342445, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 7917843128696836170, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7917843128696836170, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7917843128696836170, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7917843128696836170, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 8360160664593296202, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8360160664593296202, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8360160664593296202, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8360160664593296202, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -125
       objectReference: {fileID: 0}
     - target: {fileID: 8385257787925605813, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8385257787925605813, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8385257787925605813, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8385257787925605813, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -175
       objectReference: {fileID: 0}
     - target: {fileID: 8775991675178181120, guid: d24e768b635e95f4da9741bd27cda95f, type: 3}
       propertyPath: m_Pivot.x
@@ -7758,6 +8147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7879,6 +8272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7947,6 +8344,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: b55a0e265f53f7c4e825453f69f56f54, type: 3}
       propertyPath: m_Name
       value: plataforma6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: b55a0e265f53f7c4e825453f69f56f54, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8061,6 +8462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8118,6 +8523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8134,6 +8543,10 @@ PrefabInstance:
     - target: {fileID: -8148156210950934553, guid: a7e068c207825bb41b532e2a0db60522, type: 3}
       propertyPath: m_Name
       value: molino de viento 3d
+      objectReference: {fileID: 0}
+    - target: {fileID: -8148156210950934553, guid: a7e068c207825bb41b532e2a0db60522, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -553860988396757955, guid: a7e068c207825bb41b532e2a0db60522, type: 3}
       propertyPath: m_LocalScale.x
@@ -8312,6 +8725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: house 3d model (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -8148156210950934553, guid: 744900c37b27b0d44b4ed6de8095e69b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -553860988396757955, guid: 744900c37b27b0d44b4ed6de8095e69b, type: 3}
       propertyPath: m_LocalScale.x
       value: 6.129382
@@ -8436,6 +8853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: red+de+trepar+3d+modelo
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: fdfd5c7b29de4a54a8dfa249f9f129c4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8507,6 +8928,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: fd5d66262ee45ba48b6bc6023233c1b1, type: 3}
       propertyPath: m_Name
       value: plataforma5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: fd5d66262ee45ba48b6bc6023233c1b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8747,6 +9172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8803,6 +9232,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 70ec83b510656b843a9f6ab6ab710cac, type: 3}
       propertyPath: m_Name
       value: setas+decorativas+3d (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 70ec83b510656b843a9f6ab6ab710cac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8873,6 +9306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: casita1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3445542050043496534, guid: 61a4976ff2221b140b78ac2ee2251dc5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8932,6 +9369,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9005,6 +9446,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 69cd0d53760ab5641adfa4904d896b3e, type: 3}
       propertyPath: m_Name
       value: plataforma2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 69cd0d53760ab5641adfa4904d896b3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9150,6 +9595,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
       propertyPath: m_Name
       value: pino (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9312,6 +9761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9380,6 +9833,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
       propertyPath: m_Name
       value: banco+parque+3d (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9456,6 +9913,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: bc11d2d8886d05e488acf8dc9432c407, type: 3}
       propertyPath: m_Name
       value: plataforma1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: bc11d2d8886d05e488acf8dc9432c407, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9555,6 +10016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: casita4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 6cdb68b91448de540938e9ab7a2de36b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9652,6 +10117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9721,6 +10190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9789,6 +10262,10 @@ PrefabInstance:
     - target: {fileID: 3445542050043496534, guid: 61a4976ff2221b140b78ac2ee2251dc5, type: 3}
       propertyPath: m_Name
       value: casita1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445542050043496534, guid: 61a4976ff2221b140b78ac2ee2251dc5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10056,6 +10533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10150,6 +10631,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
       propertyPath: m_Name
       value: pino (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10310,6 +10795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: escalera
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: ca4ccc96cc784b04f841077c762814fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10396,6 +10885,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
       propertyPath: m_Name
       value: banco+parque+3d (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10565,6 +11058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: casita5 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: a1bc7a2fa36898743acac1164f5dbdd8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10624,6 +11121,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10837,6 +11338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: casita4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 6cdb68b91448de540938e9ab7a2de36b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10922,6 +11427,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
       propertyPath: m_Name
       value: pino
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11102,6 +11611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: bc11d2d8886d05e488acf8dc9432c407, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11178,6 +11691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: bc11d2d8886d05e488acf8dc9432c407, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11249,6 +11766,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
       propertyPath: m_Name
       value: pino (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11427,6 +11948,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: margarita+modelo+3d (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11569,6 +12094,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11732,6 +12261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: casita4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 6cdb68b91448de540938e9ab7a2de36b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11803,6 +12336,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: a1bc7a2fa36898743acac1164f5dbdd8, type: 3}
       propertyPath: m_Name
       value: casita5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: a1bc7a2fa36898743acac1164f5dbdd8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11948,6 +12485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: casa+dia+de+muertos+3d
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: dbb7bfff2595dda41a88807f7ba99323, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12020,6 +12561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12076,6 +12621,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
       propertyPath: m_Name
       value: banco+parque+3d (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12277,6 +12826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 69cd0d53760ab5641adfa4904d896b3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12374,6 +12927,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12551,6 +13108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: setas+decorativas+3d
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 70ec83b510656b843a9f6ab6ab710cac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12619,6 +13180,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
       propertyPath: m_Name
       value: banco+parque+3d (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12692,6 +13257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: molino+de+agua+3d
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: b318cd2170f6b0548a0d4639c6cdf61a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12763,6 +13332,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: c9b9bc26b925b684794d129b7827eea8, type: 3}
       propertyPath: m_Name
       value: casa+moderna+3d
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: c9b9bc26b925b684794d129b7827eea8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12849,6 +13422,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13001,6 +13578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: banco+parque+3d (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 14fda0e2a8fd4f44f9bad4dee5d933b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13020,6 +13601,10 @@ PrefabInstance:
     - target: {fileID: -8148156210950934553, guid: 744900c37b27b0d44b4ed6de8095e69b, type: 3}
       propertyPath: m_Name
       value: house 3d model
+      objectReference: {fileID: 0}
+    - target: {fileID: -8148156210950934553, guid: 744900c37b27b0d44b4ed6de8095e69b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -553860988396757955, guid: 744900c37b27b0d44b4ed6de8095e69b, type: 3}
       propertyPath: m_LocalScale.x
@@ -13250,6 +13835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: modelo+3d+de+casa
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: e72f45cd298ddf94780df2c781da7bf7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13309,6 +13898,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13405,6 +13998,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pino (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 08c51fbb8f84ff843b233a1fc93c75e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13500,6 +14097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: iglesia+modelo+3d
       objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: 68df4d68e6b40ca4da3b50ac227adb09, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13586,6 +14187,10 @@ PrefabInstance:
     - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
       propertyPath: m_Name
       value: margarita+modelo+3d (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771091787928289351, guid: d4e01c32bf9a25940b0cdf8175416ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13737,3 +14342,4 @@ SceneRoots:
   - {fileID: 1915614468}
   - {fileID: 358851343}
   - {fileID: 1123882075}
+  - {fileID: 1080476059}
